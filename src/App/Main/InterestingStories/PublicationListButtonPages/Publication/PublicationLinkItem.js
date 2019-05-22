@@ -1,10 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-const PublicationLinkItem = () =>{
+const PublicationLinkItem = (
+    linkItem
+) =>{
     return(
-        <a href="1.html">
+        <Link to = "/1">
             <button className="button">Читать подробнее</button>
-        </a>
+        </Link>
     )
 }
 

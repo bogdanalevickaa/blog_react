@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Menu = ()=>{
     return(
@@ -6,7 +7,7 @@ const Menu = ()=>{
             <div className="menu">Меню</div>
             <div className="list_menu">
                 <ul className="ul">
-                    <li className="li"><a href="##">Интересные истории</a></li>
+                    <li className="li"><Link to="/interesting_stories">Интересные истории</Link></li>
                     <li className="li"><a href="##">История кино</a></li>
                     <li className="li"><a href="##">Музыка из фильмов</a></li>
                     <li className="li"><a href="##">Мультики</a></li>

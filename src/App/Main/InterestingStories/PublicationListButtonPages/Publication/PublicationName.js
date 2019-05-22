@@ -8,10 +8,11 @@ class PublicationName extends Component{
     }
     render(){
         const{
+            id,
             publicationName,
         } = this.props
         return(
-            <div className="publication_name h2">
+            <div className="publication_name h2" key={id}>
                 <h2>{publicationName}</h2>
             </div>
         )

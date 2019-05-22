@@ -72,12 +72,12 @@ a{
 	float: left;
 }
 .date{
-	background-image: url(./Publication/img/calendar.png);
+	background-image: url(./PublicationListButtonPages/Publication/img/calendar.png);
 	background-repeat: no-repeat;
 	background-size: 15px 15px;
 }
 .name{
-	background-image: url(./Publication/img/user.png);
+	background-image: url(./PublicationListButtonPages/Publication/img/user.png);
 	background-repeat: no-repeat;
 	background-size: 15px 15px;
 }
@@ -87,7 +87,7 @@ a{
     width: 135px;
 }
 .comment{
-	background-image: url(./Publication/img/comment.png);
+	background-image: url(./PublicationListButtonPages/Publication/img/comment.png);
 	background-repeat: no-repeat;
 	background-size: 20px 20px;
 	float: right;
@@ -167,9 +167,9 @@ a{
     font-size: 18px;
     outline: none;
     cursor: pointer;
-    padding: 10px;
+	padding: 10px;
 }
-.page:hover{
+.activPage .page:hover{
 	color: #4EBFD0;
     background-color: #37393E;
     border: 2px solid #d9e0e0;
