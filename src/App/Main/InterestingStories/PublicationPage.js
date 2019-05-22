@@ -7,6 +7,8 @@ import PublicationText from './PublicationListButtonPages/Publication/Publicatio
 import BlockLinkMenu from './PublicationListButtonPages/Publication/BlockLinkMenu/BlockLinkMenu';
 import BlockLinkYearFilm from './PublicationListButtonPages/Publication/BlockLinkYearFilm/BlockLinkYearFilm';
 import './publicationPage.css'
+import AddComment from './Comment/AddComment';
+import BlockComment from './Comment/BlockComment';
 
 const PublicationPage = ({
     id,
@@ -143,26 +145,10 @@ const PublicationPage = ({
                     linkYearFilm = {linkYearFilm}
                 />
             </div>
-            <div className="block_comment">
-                <h2>Отзывы статьи: "Как на самом деле снимаються фильмы"</h2>
-                <div className="no_comments">
-                    <div className="no_comments_text">На даный момент нет коментариев. Mожете оставить свой коментарий внизу.</div>
-                </div>
-                <div className="block_user_comment row">
-                    <div className="comment_user row">
-                        <div className="name_user">Коментарий от "dana"</div>
-                        <div className="comment_user_text">Добрый вечер! Предлагаю дополнить список фильмом 2018 года "Красотка на всю голову" - фильм хоть и комедийный, но носит глубокий смысл для большинства девушек !</div>
-                        <div className="data_comment_user">19.02.2019</div>
-                    </div>
-                </div>
-            </div>
-            <div className="block_comment">
-                <h2 className="">Добавить отзыв</h2>
-                <input type="text" name="name" placeholder="Ваше имя"></input>
-                <input type="email" name="email" placeholder="Ваша электронная почта"></input>
-                <textarea className="comment_write" name="comment" placeholder="Ваше мнение"></textarea>
-                <button className="button">Отправить отзыв</button>
-            </div>
+            <BlockComment
+                publicationName = {publicationName}
+            />
+            <AddComment/>
         </div>        
     )
 }

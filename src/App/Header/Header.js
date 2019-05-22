@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Header = () =>{
     return(
@@ -7,10 +8,10 @@ const Header = () =>{
                 <div className="conteiner">
 			        <div className="pole row">
                         <div className="logo">
-                            <a href="index.html">
-                                <div className="img_logo"><img src="/img/logo.png"/></div>
+                            <Link to="/">
+                                <div className="img_logo"><img src="/img/logo.png"></img></div>
                                 <div className="name_site">VkadreNet</div>
-                            </a>
+                            </Link>
                             <div className="fraza">блог о кино, фильмах, сериалах и мультфильмах</div>
                         </div>
                         <div className="search">

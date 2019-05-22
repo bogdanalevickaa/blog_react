@@ -59,7 +59,7 @@ class PublicationListButtonPages extends Component{
                     linkYearFilm
                 })=>{
                     return(
-                        <PublicationList
+                        <PublicationList key={id}
                         id={id}
                         publicationName={publicationName}
                         limitationAge={limitationAge}
